@@ -2,8 +2,5 @@
 
 * [Introduction](README.md)
 * [First Chapter](chapter1.md)
-
-
-
-
+* Who am I?
 
