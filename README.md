@@ -6,7 +6,11 @@ Throughout this last couple of years, I have been gathering and compiling a bunc
 
 This book is about those notes. However, I would like to mention that this is not an extensive or exhaustive guide to everything data or machine learning. This is merely a collection of annotations about different topics I have struggled with or focused on during my professional life. Nonetheless, if I feel like there is a gap between some of the topics, or if there it some key element missing, I will write about it so that you, the reader, will be able to fully understand my line of thought.
 
+Please note that this is a work in progress. I will be updating this guide one step at a time.
+
 Thanks for being here, and I hope this guide will be useful. If there is any comment, issue or you would simply like to say hi, feel free to leave me a message.
+
+Link to the book: https://juandes.gitbooks.io/datanotes/content/
 
 
 
