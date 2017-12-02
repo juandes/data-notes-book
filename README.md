@@ -8,11 +8,5 @@ This book is about those notes. However, I would like to mention that this is no
 
 Thanks for being here, and I hope this guide will be useful. If there is any comment, issue or you would simply like to say hi, feel free to leave me a message.
 
-## Who am I?
-
-## 
-
-## Topics to discuss
-
 
 
