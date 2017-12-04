@@ -1,7 +1,10 @@
 # Summary
 
-* [Introduction](README.md)
+## Introduction
+
+* [Welcome!](README.md)
 * [Who am I?](/introduction.md)
 * Topics to discuss
-* [First Chapter](chapter1.md)
+
+## Introduction
 
