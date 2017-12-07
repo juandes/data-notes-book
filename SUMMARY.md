@@ -9,7 +9,6 @@
 
 ## Machine Learning
 
-* [Supervised Learning](supervised-learning.md)
 * Unsupervised Learning
   * Similarity and Distance Measures
 
