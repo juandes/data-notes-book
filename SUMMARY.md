@@ -10,7 +10,5 @@
 ## Machine Learning
 
 * Unsupervised Learning
-  * Similarity and Distance Measures
-
-
+  * [Similarity and Distance Measures](unsupervised_learning/similarity_measure.md)
 
