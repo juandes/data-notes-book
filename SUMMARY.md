@@ -9,6 +9,6 @@
 
 ## Machine Learning
 
-* Unsupervised Learning
+* [Unsupervised Learning](machine-learning/unsupervised-learning.md)
   * [Similarity and Distance Measures](unsupervised_learning/similarity_measure.md)
 

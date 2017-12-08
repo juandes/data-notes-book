@@ -12,7 +12,7 @@ Over the next couple of paragraphs, I will present some of the most used distanc
 
 The Manhattan distance, also known as the Taxicab distance or $$ L_i$$ distance is a distance which is calculated by adding the absolute difference \(absolute value\) of their cartesian coordinates.
 $$
-d(\mathbf{x},\mathbf{y})= ||\mathbf{x} - \mathbf{y}||_1 = \sum|x_i - y_i|
+d(\mathbf{x},\mathbf{y})= ||\mathbf{x} - \mathbf{y}||_1 = \sum_{i=1}^{n}|x_i - y_i|
 $$
 where both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
 $$
