@@ -26,7 +26,7 @@ $$
 $$
 
 
-##### Example:
+##### Example
 
 For vectors $$\mathbf{x} = (1,13)$$ and $$\mathbf{y} = (2,9)$$, the Manhattan Distance is $$d_1(\mathbf{x},\mathbf{y})= |1-2| + |13 - 9| = 5 $$.
 
@@ -38,7 +38,6 @@ For vectors $$\mathbf{x} = (1,13)$$ and $$\mathbf{y} = (2,9)$$, the Manhattan Di
 > dist(rbind(x,y), method = 'manhattan')
   x
 y 5
-
 ```
 
 ### Euclidean Distance
@@ -48,6 +47,4 @@ Soon...
 ### Minkowski Distance
 
 Soon...
-
-
 
