@@ -42,9 +42,45 @@ y 5
 
 ### Euclidean Distance
 
-Soon...
+The Euclidean distance, also known as the $$L_2$$ distance is the "normal" straight line distance that is calculated by finding the length between two points in the space.
+
+$$
+d(\mathbf{x},\mathbf{y})= \sqrt{\sum_{i=1}^{n}(x_i - y_1)^2}
+$$
+
+where both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
+
+
+$$
+\mathbf{x} = (p_1, p_2, ..., p_n), \mathbf{y} = (p_1, p_2, ..., p_n)
+$$
+
+##### Example
+
+For vectors $$\mathbf{x} = (1,13)$$ and $$\mathbf{y} = (2,9)$$, the Manhattan Distance is $$d(\mathbf{x},\mathbf{y})= \sqrt{(1-2)^2 + (13 - 9)^2} = 4.12 $$.
+
+##### R Snippet
+
+```
+> x <- c(1,13)
+> y <- c(2,9)
+> dist(rbind(x,y), method = 'euclidean')
+         x
+y 4.123106
+```
+
+
+
+
+
+
 
 ### Minkowski Distance
 
 Soon...
+
+### Cosine Similarity
+
+Soon...
+
 
