@@ -46,7 +46,7 @@ The Euclidean distance, also known as the $$L_2$$ distance is the "normal" strai
 
 
 $$
-d(\mathbf{x},\mathbf{y})= \sqrt{\sum_{i=1}^{n}(x_i - y_1)^2}
+d(\mathbf{x},\mathbf{y})= \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2}
 $$
 
 
@@ -86,7 +86,7 @@ $$
 cosine\_similarity = \cos(\theta) = \frac{\mathbf{X}\cdot{}\mathbf{Y}}{||\mathbf{X}||_2||\mathbf{Y}||_2} = \frac{\sum_{i=1}^{n}x_iy_i}{\sqrt{\sum_{i=1}^{n}X_i^2}\sqrt{\sum_{i=1}^{n}Y_i^2}}
 $$
 
-The upper part of the fraction, $${\mathbf{X}\cdot{}\mathbf{Y}}$$, is the dot product of both vectors, and the lower part is the magnitude (also known as the length or Euclidean norm). The next example explain this better.
+The upper part of the fraction, $${\mathbf{X}\cdot{}\mathbf{Y}}$$, is the dot product of both vectors, and the lower part is the product of the magnitude(also known as the length or Euclidean norm) of each vector. The next example 
 
 ##### Example
 Soon :)
