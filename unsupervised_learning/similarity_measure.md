@@ -44,9 +44,11 @@ y 5
 
 The Euclidean distance, also known as the $$L_2$$ distance is the "normal" straight line distance that is calculated by finding the length between two points in the space.
 
+
 $$
 d(\mathbf{x},\mathbf{y})= \sqrt{\sum_{i=1}^{n}(x_i - y_1)^2}
 $$
+
 
 where both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
 
@@ -54,6 +56,7 @@ where both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
 $$
 \mathbf{x} = (p_1, p_2, ..., p_n), \mathbf{y} = (p_1, p_2, ..., p_n)
 $$
+
 
 ##### Example
 
@@ -69,18 +72,22 @@ For vectors $$\mathbf{x} = (1,13)$$ and $$\mathbf{y} = (2,9)$$, the Manhattan Di
 y 4.123106
 ```
 
-
-
-
-
-
-
 ### Minkowski Distance
 
 Soon...
 
 ### Cosine Similarity
 
-Soon...
+The cosine similarity is a measure of similarity that quantifies the cosine of the angle between two vectors. If used in a positive-values space, the value will always be between 0 and 1, where 0 means dissimilarity and 1 means complete similarity. 
 
+The equation is the following:
+
+$$
+cosine\_similarity = \cos(\theta) = \frac{\mathbf{X}\cdot{}\mathbf{Y}}{||\mathbf{X}||_2||\mathbf{Y}||_2} = \frac{\sum_{i=1}^{n}x_iy_i}{\sqrt{\sum_{i=1}^{n}X_i^2}\sqrt{\sum_{i=1}^{n}Y_i^2}}
+$$
+
+The upper part of the fraction, $${\mathbf{X}\cdot{}\mathbf{Y}}$$, is the dot product of both vectors, and the lower part is the magnitude (also known as the length or Euclidean norm). The next example explain this better.
+
+##### Example
+Soon :)
 
