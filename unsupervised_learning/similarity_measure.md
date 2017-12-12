@@ -22,7 +22,7 @@ where both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
 
 
 $$
-\mathbf{x} = (p_1, p_2, ..., p_n), \mathbf{y} = (p_1, p_2, ..., p_n)
+\mathbf{x} = (x_1, x_2, ..., x_n), \mathbf{y} = (x_1, x_2, ..., x_n)
 $$
 
 
@@ -54,7 +54,7 @@ where both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
 
 
 $$
-\mathbf{x} = (p_1, p_2, ..., p_n), \mathbf{y} = (p_1, p_2, ..., p_n)
+\mathbf{x} = (x_1, x_2, ..., x_n), \mathbf{y} = (x_1, x_2, ..., x_n)
 $$
 
 
@@ -74,7 +74,23 @@ y 4.123106
 
 ### Minkowski Distance
 
-Soon...
+Minkowski Distance is a generalisation of the previous two distances discussed (Manhattan and Euclidean). It looks like this:
+
+$$
+(\sum_{i=1}^{n}|x_i-y_i|^p)^\frac{1}{p}
+$$
+
+where $$p$$ is typically $$1$$ or $$2$$. If used with the latest, the equation is the same as the Manhattan distance, with the former, it becomes the Euclidean distance, and both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
+
+
+
+
+
+$$
+\mathbf{x} = (x_1, x_2, ..., p_n), \mathbf{y} = (x_1, x_2, ..., x_n)
+$$
+
+
 
 ### Cosine Similarity
 
