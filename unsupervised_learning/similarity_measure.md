@@ -152,12 +152,12 @@ $$
 [1] 0.8283643
 ```
 
-The cosine similarity is often used to determine how similar two texts are. The approach involves creating a bag of words with the frequency of each term in the documents. Then, each "row" of terms is converted to a vector. For example, suppose we have two documents **X **and **Y**, and **X **says _"friday is my favorite day" \_and **Y** _"mondays is my least favorite day".  A bag of word would look like this:
+The cosine similarity is often used to determine how similar two texts are. The approach involves creating a bag of words with the frequency of each term in the documents. Then, each "row" of terms is converted to a vector. For example, suppose we have two documents **X **and **Y**, and **X **says _"friday is my favorite day" \_and **Y** _"mondays are my least favorite day".  A bag of word would look like this:
 
 | Doc. | friday | is | my | favorite | day | mondays | are | least |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | X | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
-| Y | 0 | 0 | 1 | 1 | 1 | 0 | 1 | 1 |
+| Y | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 |
 
 The vectorial representation would look like this:
 
