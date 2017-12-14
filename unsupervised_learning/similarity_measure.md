@@ -116,12 +116,16 @@ $$
 
 
 Then, we calculate $$||\mathbf{X}||_2$$ and $$||\mathbf{y}||_2$$:
+
+
 $$
 ||\mathbf{X}||_2 = \sqrt{(8\times8)+(9\times9)+(0\times0)+(1\times1)+(3\times3)+(3\times3)}=12.80
 $$
 
 
-and  
+and
+
+
 $$
 ||\mathbf{Y}||_2 = \sqrt{(10\times10)+(9\times9)+(2\times2)+(11\times11)+(3\times3)+(4\times4)}=18.19
 $$
@@ -148,7 +152,7 @@ $$
 [1] 0.8283643
 ```
 
-The cosine similarity is often used to determine how similar two texts are. The approach involves creating a bag of words with the frequency of each term in the documents. Then, each "row" of terms is converted to a vector. For example, suppose we have two documents **X **and **Y**, and **X **says _"friday is my favorite day" _and **Y** _"mondays is my least favorite day"_.  A bag of word would look like this:
+The cosine similarity is often used to determine how similar two texts are. The approach involves creating a bag of words with the frequency of each term in the documents. Then, each "row" of terms is converted to a vector. For example, suppose we have two documents **X **and **Y**, and **X **says _"friday is my favorite day" \_and **Y** _"mondays is my least favorite day".  A bag of word would look like this:
 
 | Doc. | friday | is | my | favorite | day | mondays | are | least |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
