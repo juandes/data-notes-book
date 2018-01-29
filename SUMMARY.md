@@ -9,6 +9,9 @@
 
 ## Machine Learning
 
+* [Supervised Learning](machine-learning/supervised.md)
+  * Introduction
+  * [Techniques](machine-learning/supervised/sqs.md)
 * [Unsupervised Learning](machine-learning/unsupervised-learning.md)
   * [Similarity and Distance Measures](unsupervised_learning/similarity_measure.md)
 
