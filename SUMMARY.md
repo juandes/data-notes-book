@@ -16,4 +16,5 @@
   * [Similarity and Distance Measures](unsupervised_learning/similarity_measure.md)
 
 ## Deep Learning
+* [Object Detection](deep-learning/object-detection.md)
 
