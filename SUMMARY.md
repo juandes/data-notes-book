@@ -18,5 +18,5 @@
 ## Deep Learning
 
 * [Object Detection](deep-learning/object-detection.md)
-* [Architectures](deep-learning/object-detection/architectures.md)
+  * [Architectures](deep-learning/object-detection/architectures.md)
 
