@@ -10,5 +10,5 @@ Please note that this is a work in progress. I will be updating this guide one s
 
 Thanks for being here, and I hope this guide will be useful. If there is any comment, issue or you would simply like to say hi, feel free to leave me a message.
 
-Link to the book: [https://juandes.gitbooks.io/datanotes/content/](https://juandes.gitbooks.io/datanotes/content/)
+Link to the book: [https://juandes.gitbook.io/my-notes/](https://juandes.gitbook.io/my-notes/)
 
