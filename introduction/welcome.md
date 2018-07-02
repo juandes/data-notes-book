@@ -1,4 +1,4 @@
-# Introduction
+# Welcome!
 
 Hi! You might be wondering, what is this and why am I reading this? While I can't tell you why you are reading this, I am able to explain what this is.
 
