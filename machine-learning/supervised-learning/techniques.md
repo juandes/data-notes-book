@@ -1,4 +1,4 @@
-# Techniques
+# Kernel Trick
 
 Every now and then, when using linear methods such as Support Vector Machines \(SVM\), we could encounter the case where our dataset is not linearly separable, making it hard for the learner to learn a precise and optimal distinction between the labels of the dataset. For example, the next picture represents a dataset with data whose classes are not linearly separable, in other words, there is no a single line able to separate the dataset so that each side of the line is made of observations of the same class.
 

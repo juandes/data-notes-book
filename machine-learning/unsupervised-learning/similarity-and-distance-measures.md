@@ -95,5 +95,13 @@ The cosine similarity is often used to determine how similar two texts are. The 
 
 The vectorial representation would look like this:
 
- and .
+$$
+x = (1,1,1,1,1,0,0,0)
+$$
+
+ and 
+
+$$
+y = (0,0,1,1,1,0,1,1).
+$$
 

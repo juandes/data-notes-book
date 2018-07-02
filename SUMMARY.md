@@ -11,7 +11,7 @@
 
 * [Supervised Learning](machine-learning/supervised-learning/README.md)
   * [Introduction](machine-learning/supervised-learning/introduction.md)
-  * [Techniques](machine-learning/supervised-learning/techniques.md)
+  * [Kernel Trick](machine-learning/supervised-learning/techniques.md)
 * [Unsupervised Learning](machine-learning/unsupervised-learning/README.md)
   * [Similarity and Distance Measures](machine-learning/unsupervised-learning/similarity-and-distance-measures.md)
 
