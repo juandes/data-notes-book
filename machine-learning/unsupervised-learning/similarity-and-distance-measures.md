@@ -10,17 +10,31 @@ Over the next couple of paragraphs, I will present some of the most used distanc
 
 ## Manhattan Distance
 
-The Manhattan distance, also known as the Taxicab distance or  distance is a distance which is calculated by adding the absolute difference \(absolute value\) of their cartesian coordinates.
+The Manhattan distance, also known as the Taxicab distance or $$L_i$$ distance is a distance which is calculated by adding the absolute difference \(absolute value\) of their cartesian coordinates.
+
+$$
+d_1(\mathbf{x},\mathbf{y})= ||\mathbf{x} - \mathbf{y}||1 = \sum{i=1}^{n}|x_i - y_i|
+$$
 
 where both  and  are vectors of the shape
 
+$$
+\mathbf{x} = (x_1, x_2, ..., x_n), \mathbf{y} = (x_1, x_2, ..., x_n)
+$$
+
 ### Example
 
-For vectors  and , the Manhattan Distance is .
+For vectors $$\mathbf{x} = (1,13)$$ and $$\mathbf{y} = (2,9)$$ , the Manhattan Distance is:
+
+$$
+d_1(\mathbf{x},\mathbf{y})= |1-2| + |13 - 9| = 5
+$$
+
+ 
 
 ### R Snippet
 
-```text
+```r
 > x <- c(1,13)
 > y <- c(2,9)
 > dist(rbind(x,y), method = 'manhattan')
