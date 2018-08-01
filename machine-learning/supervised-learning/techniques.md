@@ -12,6 +12,21 @@ The above picture is a two-dimensional space in which there is no line that can 
 
 The "trick" part of the expression "kernel trick" comes from the fact that there is really no need of transforming the whole space into a high dimensional version of it. Instead, while solving an SVM, the algorithm only needs to calculate the inner product of the vectors in the feature space. For example, for a kernel function , and input  and ,  will project these data points in a high dimensional space, and it is represented by the following equation:
 
-**NEXT**: Write an example in code  
-**NEXT**: Write an example using math **NEXT**: List several kernel functions
+### Example in Python using scikit-learn
+
+```python
+from sklearn.datasets import make_circles, make_blobs
+from sklearn.cross_validation import train_test_split
+from sklearn import svm
+
+X, y = make_circles(n_samples=1000, noise=0.06, factor=0.4)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
+
+# using a linear kernel
+clf = svm.SVC(kernel='linear', C=1000)
+clf.fit(X_train, y_train)
+
+clf = svm.SVC(kernel='poly', C=1000)
+clf.fit(X_train, y_train)
+```
 
