@@ -46,15 +46,27 @@ y 5
 
 The Euclidean distance, also known as the  distance is the "normal" straight line distance that is calculated by finding the length between two points in the space.
 
-where both  and  are vectors of the shape
+$$
+d(\mathbf{x},\mathbf{y})= \sqrt{\sum_{i=1}^{n}(x_i - y_i)^2}
+$$
+
+where both $$\mathbf{x}$$ and $$\mathbf{y}$$ are vectors of the shape
+
+$$
+\mathbf{x} = (x_1, x_2, ..., x_n), \mathbf{y} = (x_1, x_2, ..., x_n)
+$$
 
 ### Example
 
-For vectors  and , the Manhattan Distance is .
+For vectors $$\mathbf{x} = (1,13)$$ and $$\mathbf{y} = (2,9)$$, the Manhattan Distance is
+
+$$
+d(\mathbf{x},\mathbf{y})= \sqrt{(1-2)^2 + (13 - 9)^2} = 4.12
+$$
 
 ### R Snippet
 
-```text
+```r
 > x <- c(1,13)
 > y <- c(2,9)
 > dist(rbind(x,y), method = 'euclidean')
@@ -66,7 +78,15 @@ y 4.123106
 
 Minkowski Distance is a generalisation of the previous two distances discussed \(Manhattan and Euclidean\). It looks like this:
 
-where  is typically  or . If used with the latest, the equation is the same as the Manhattan distance, with the former, it becomes the Euclidean distance, and both  and  are vectors of the shape
+$$
+(\sum_{i=1}^{n}|x_i-y_i|^p)^\frac{1}{p}
+$$
+
+where $$p$$ is typically $$1$$ or $$2$$. If used with the latest, the equation is the same as the Manhattan distance, with the former, it becomes the Euclidean distance, and both $$x$$ and $$y$$ are vectors of the shape:
+
+$$
+\mathbf{x} = (x_1, x_2, ..., p_n), \mathbf{y} = (x_1, x_2, ..., x_n)
+$$
 
 ## Cosine Similarity
 
@@ -74,22 +94,42 @@ The cosine similarity is a measure of similarity that quantifies the cosine of t
 
 The equation is the following:
 
-The upper part of the fraction, , is the dot product of both vectors, and the lower part is the product of the magnitude\(also known as the length or Euclidean norm\) of each vector.
+$$
+cosine_similarity = \cos(\theta) = \frac{\mathbf{X}\cdot{}\mathbf{Y}}{||\mathbf{X}||2||\mathbf{Y}||2} = \frac{\sum{i=1}^{n}x_iy_i}{\sqrt{\sum{i=1}^{n}X_i^2}\sqrt{\sum_{i=1}^{n}Y_i^2}}
+$$
+
+The upper part of the fraction, $${\mathbf{X}\cdot{}\mathbf{Y}}$$ , is the dot product of both vectors, and the lower part is the product of the magnitude\(also known as the length or Euclidean norm\) of each vector.
 
 ### Example
 
-Suppose we have two vectors  and .  
-First, we need to calculate the dot product .
+Suppose we have two vectors $$x=(8,9,0,1,3,3)$$ and $$y=(10,9,2,11,3,4)$$ .  
+First, we need to calculate the dot product $$\mathbf{X}\cdot{}\mathbf{Y}$$ .
 
-Then, we calculate  and :
+$$
+\mathbf{X}\cdot{}\mathbf{Y} = (8\times10)+(9\times9)+(0\times2)+(1\times11)+(3\times3)+(3\times4) = 193
+$$
+
+Then, we calculate $$||\mathbf{X}||_2$$ and $$||\mathbf{Y}||_2$$ :
+
+$$
+||\mathbf{X}||_2 = \sqrt{(8\times8)+(9\times9)+(0\times0)+(1\times1)+(3\times3)+(3\times3)}=12.80
+$$
 
 and
 
+$$
+||\mathbf{Y}||_2 = \sqrt{(10\times10)+(9\times9)+(2\times2)+(11\times11)+(3\times3)+(4\times4)}=18.19
+$$
+
 Now that we have everything, we calculate the cosine similarity.
+
+$$
+\cos(x,y) = \frac{\mathbf{X}\cdot{}\mathbf{Y}}{||\mathbf{X}||_2||\mathbf{Y}||_2} = \frac{193}{12.80\times18.19}=0.82
+$$
 
 ### R Snippet of the problem
 
-```text
+```r
 > x <- c(8,9,0,1,3,3)
 > y <- c(10,9,2,11,3,4)
 > dot <- x%*%y
@@ -100,7 +140,9 @@ Now that we have everything, we calculate the cosine similarity.
 [1] 0.8283643
 ```
 
-The cosine similarity is often used to determine how similar two texts are. The approach involves creating a bag of words with the frequency of each term in the documents. Then, each "row" of terms is converted to a vector. For example, suppose we have two documents **X** and **Y**, and **X** says _"friday is my favorite day" \_and **Y**_ "mondays are my least favorite day". A bag of word would look like this:
+### Use case: text similarity
+
+The cosine similarity is often used to determine how similar two texts are. The approach involves creating a bag of words with the frequency of each term in the documents. Then, each "row" of terms is converted to a vector. For example, suppose we have two documents **X** and **Y**, and **X** says _"friday is my favorite day"_  and _**Y**  "mondays are my least favorite day"_. A bag of word would look like this:
 
 | Doc. | friday | is | my | favorite | day | mondays | are | least |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -116,6 +158,8 @@ $$
  and 
 
 $$
-y = (0,0,1,1,1,0,1,1).
+y = (0,0,1,1,1,0,1,1)
 $$
+
+Once you have the vectors, apply the cosine similarity to determine if they are indeed similar. In this case, the value is 0.6, which indicates that there is a certain level of similarity.
 
