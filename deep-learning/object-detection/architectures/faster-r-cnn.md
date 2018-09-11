@@ -4,5 +4,5 @@
 
 In the second stage, the box proposals previously found, will be fed to the rest of the feature extractor with the goal of predicting the label of the object and a better position of the bounding box that surrounds it.
 
-The original paper that describes the system is available at: __[_Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks_](https://arxiv.org/pdf/1506.01497.pdf)\_\_
+The original paper that describes the system is available at: __[Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/pdf/1506.01497.pdf)
 
