@@ -21,6 +21,7 @@
   * [Introduction](deep-learning/object-detection/introduction.md)
   * [Meta-architectures](deep-learning/object-detection/architectures/README.md)
     * [Faster R-CNN](deep-learning/object-detection/architectures/faster-r-cnn.md)
+    * [R-FCN](deep-learning/object-detection/architectures/r-fcn.md)
   * [Feature extractors](deep-learning/object-detection/feature-extractors.md)
   * [Loss functions](deep-learning/object-detection/loss-functions.md)
   * [Metrics](deep-learning/object-detection/metrics.md)
