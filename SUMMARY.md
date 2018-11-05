@@ -22,6 +22,7 @@
   * [Meta-architectures](deep-learning/object-detection/architectures/README.md)
     * [Faster R-CNN](deep-learning/object-detection/architectures/faster-r-cnn.md)
     * [R-FCN](deep-learning/object-detection/architectures/r-fcn.md)
+    * [Single Shot MultiBox Detection](deep-learning/object-detection/architectures/single-shot-multibox-detection.md)
   * [Feature extractors](deep-learning/object-detection/feature-extractors.md)
   * [Loss functions](deep-learning/object-detection/loss-functions.md)
   * [Metrics](deep-learning/object-detection/metrics.md)
