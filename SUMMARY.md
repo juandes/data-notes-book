@@ -27,3 +27,10 @@
   * [Loss functions](deep-learning/object-detection/loss-functions.md)
   * [Metrics](deep-learning/object-detection/metrics.md)
 
+## Techniques
+
+## Data Oversampling and Undersampling
+
+* [Oversampling](data-oversampling-and-undersampling/oversampling/README.md)
+  * [SMOTE](data-oversampling-and-undersampling/oversampling/smote.md)
+
